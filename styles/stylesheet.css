@@ -1,0 +1,144 @@
+.grid-container body {
+  border: 1px solid red;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 5px 5px;
+}
+
+.logo {
+  grid-column-start: 1;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  }
+
+.social {
+  grid-column-start: 8;
+  grid-column-end: 12;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  }
+
+.social img {
+  padding-left: 3px;
+  padding-right: 3px;
+  height: 25px;
+  width: 25px;
+  }
+
+.nav {
+  display: flex;
+  background-color: #444444;
+  flex-direction: row;
+  justify-content: space-around;
+  grid-column: 1 / 12;
+  grid-row: 3 / 4;
+  }
+
+.test {
+  border: 1px solid #03a3df;
+  grid-column: 8 / 12;
+  grid-row: 5 / 10;
+  }
+
+.lessons {
+  border: 1px solid #03a3df;
+  grid-column: 1 / 8;
+  grid-row: 5 / 6;
+  }
+
+.classes {
+  border: 1px solid #03a3df;
+  grid-column: 1 / 8;
+  grid-row: 7 / 8;
+  }
+
+.instructors {
+  border: 1px solid #03a3df;
+  grid-column: 1 / 8;
+  grid-row: 9 / 10;
+  }
+
+.aboutus {
+  border: 1px solid #03a3df;
+  grid-column: 1 / 12;
+  grid-row: 10 / 11;
+  }
+
+
+.nondisc {
+  border: 1px solid #03a3df;
+  grid-column: 1 / 12;
+  grid-row: 12 / 13;
+  }
+
+.footer {
+  border: 1px solid #03a3df;
+  grid-column: 1 / 12;
+  grid-row: 14 / 15;
+}
+
+.video {
+  border: 1px solid #03a3df;
+  grid-column: 1 / 12;
+  grid-row: 4 / 5;
+}
+
+}
+
+ul {
+    list-style-type: none;
+    background-color: #444444;
+
+}
+li {
+  display: inline;
+  background-color: #444444;
+
+}
+ul a {
+  color: white;
+  background-color: #444444;
+  text-decoration: none;
+}
+
+
+footer {
+  background-image: url("footerimage.jpg");
+  height: 300px;
+}
+
+h1 {
+    font: Arial;
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+h2 {
+    font: Arial;
+    font-weight: bold;
+    font-size: 24px;
+    }
+
+body {
+    font: arial;
+    font-weight: normal;
+    font-size: 17px;
+}
+
+callout {
+  font: arial;
+  font-weight: normal;
+  color: #03a3df;
+  font-size: 30px;
+}
+
+speakername {
+  font: arial;
+  font-weight: bold;
+  color: #03a3df;
+  font-size: 14px;
+  text-transform: uppercase;
+}
