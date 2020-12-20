@@ -1,24 +1,29 @@
-.grid-container body {
-  border: 1px solid red;
-}
-
 .grid-container {
   display: grid;
-  grid-gap: 5px 5px;
+  grid-gap: 10px 10px;
+  grid-column: 1 / 12;
+  grid-row: 1 / 8;
 }
 
 .logo {
+  display: grid;
+  height: 200px;
+  background: #03a3df;
   grid-column-start: 1;
-  grid-column-end: 8;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  }
-
-.social {
-  grid-column-start: 8;
   grid-column-end: 12;
   grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row-end: 1;
+  }
+
+.logo img {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+}
+
+.logo .social {
+  grid-column-start: 11;
+  grid-column-end: 12;
   }
 
 .social img {
@@ -34,109 +39,172 @@
   flex-direction: row;
   justify-content: space-around;
   grid-column: 1 / 12;
-  grid-row: 3 / 4;
+  grid-row: 2 / 2;
   }
 
+.nav h4 {
+  color: white;
+}
 .test {
-  border: 1px solid #03a3df;
-  grid-column: 8 / 12;
-  grid-row: 5 / 10;
-  }
-
-.lessons {
-  border: 1px solid #03a3df;
-  grid-column: 1 / 8;
-  grid-row: 5 / 6;
+  grid-column: 10 / 12;
+  grid-row: 3 / 7;
   }
 
 .classes {
-  border: 1px solid #03a3df;
-  grid-column: 1 / 8;
-  grid-row: 7 / 8;
+  grid-column: 3 / 7;
+  grid-row: 3 / 3;
   }
+
+  .classes h2 {
+    font-family: arial;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: #03a3df;
+    padding-bottom:20px;
+  }
+
+  .lessons {
+    grid-column: 3 / 7;
+    grid-row: 4 / 4;
+    }
+
+    .lessons h2 {
+      font-family: arial;
+      font-variant: normal;
+      font-weight: bold;
+      font-size: 24px;
+      color: #03a3df;
+      padding-bottom:20px;
+    }
 
 .instructors {
-  border: 1px solid #03a3df;
-  grid-column: 1 / 8;
-  grid-row: 9 / 10;
+  grid-column: 3 / 7;
+  grid-row: 5 / 5;
   }
+
+.instructors h2 {
+  font-family: arial;
+  font-variant: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: #03a3df;
+  padding-bottom:20px;
+}
+
+h4 {
+    font-family: arial;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #03a3df;
+
+}
 
 .aboutus {
-  border: 1px solid #03a3df;
-  grid-column: 1 / 12;
-  grid-row: 10 / 11;
+  grid-column: 3 / 7;
+  grid-row: 6 / 6;
+  }
+  .aboutus h2 {
+    font-family: arial;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: #03a3df;
+    padding-bottom:20px;
+  }
+.nondisc {
+  grid-column: 3 / 7;
+  grid-row: 7 / 7;
+  padding-bottom: 20px;
   }
 
-
-.nondisc {
-  border: 1px solid #03a3df;
-  grid-column: 1 / 12;
-  grid-row: 12 / 13;
+  .nondisc h2 {
+    font-family: arial;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: #03a3df;
+    padding-bottom:20px;
   }
 
 .footer {
-  border: 1px solid #03a3df;
+  background-image: url("footerimage.jpg");
+  height: 300px;
+  display: grid;
   grid-column: 1 / 12;
-  grid-row: 14 / 15;
+  grid-row: 8 / 8;
 }
+
+.footer img {
+  height: 40%;
+  grid-column: 4 / 12;
+  grid-row: 3 / 8;
+
+  }
+
+.footer p:nth-child(even) {
+  color: white;
+  grid-column: 4 / span 1;
+  grid-row: 6 / 8;
+}
+
+.footer p:nth-child(odd) {
+  color: white;
+  grid-column: 4 / 4;
+  grid-row: 8 / 8;
+}
+
 
 .video {
-  border: 1px solid #03a3df;
   grid-column: 1 / 12;
   grid-row: 4 / 5;
-}
-
 }
 
 ul {
     list-style-type: none;
     background-color: #444444;
-
 }
+
 li {
   display: inline;
   background-color: #444444;
-
 }
+
 ul a {
   color: white;
   background-color: #444444;
   text-decoration: none;
 }
 
-
-footer {
-  background-image: url("footerimage.jpg");
-  height: 300px;
-}
-
 h1 {
-    font: Arial;
+    font-family: Arial;
+    font-variant: normal;
     font-weight: bold;
     font-size: 40px;
-  }
-
-h2 {
-    font: Arial;
-    font-weight: bold;
-    font-size: 24px;
-    }
-
-body {
-    font: arial;
-    font-weight: normal;
-    font-size: 17px;
 }
 
-callout {
-  font: arial;
-  font-weight: normal;
+h2 {
+    font-family: Arial;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 24px;
+    padding-bottom: 5px;
+}
+
+body {
+    font-family: Arial;
+    font-variant: normal;
+}
+
+q {
+  font-family: Arial;
   color: #03a3df;
   font-size: 30px;
 }
 
 speakername {
-  font: arial;
+  font-family: Arial;
   font-weight: bold;
   color: #03a3df;
   font-size: 14px;
